@@ -1,13 +1,13 @@
 let numbersOfFilms;
 
 function start() {
-  numbersOfFilms = +prompt("Сколько фильмов выуже посмотрели?", "");
+  numbersOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
   while (
     numbersOfFilms == "" ||
     numbersOfFilms == null ||
     isNaN(numbersOfFilms)
   ) {
-    numbersOfFilms = +prompt("Сколько фильмов выуже посмотрели?", "");
+    numbersOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
   }
 }
 
@@ -37,7 +37,7 @@ rememberMyFilms();
 
 function detectPersonalLevel() {
   if (personalMovieDB.counter <= 10) {
-    console.log("Вы смотрели слишком мало фильмов!");
+    console.log("Вы смотрели слишком мало фильмов");
   } else if (personalMovieDB.counter >= 30) {
     console.log("Вы классический зритель");
   } else if (personalMovieDB.counter > 30) {
